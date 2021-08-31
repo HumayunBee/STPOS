@@ -37,4 +37,9 @@
     <action
         android:id="@+id/action_global_salesAndPaymentSummaryFragment"
         app:destination="@id/salesAndPaymentSummaryFragment" />
+    <fragment
+        android:id="@+id/categoryWiseFragment"
+        android:name="com.example.stpos.CategoryWiseFragment"
+        android:label="fragment_category_wise"
+        tools:layout="@layout/fragment_category_wise" />
 </navigation>
