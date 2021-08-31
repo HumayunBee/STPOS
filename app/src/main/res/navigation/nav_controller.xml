@@ -23,7 +23,7 @@
         app:destination="@id/homeFragment" />
     <fragment
         android:id="@+id/salesHistoryFragment"
-        android:name="com.example.stpos.SalesHistoryFragment"
+        android:name="com.example.stpos.Fragment.SalesHistoryFragment"
         android:label="fragment_sales_history"
         tools:layout="@layout/fragment_sales_history" />
     <action
@@ -31,7 +31,7 @@
         app:destination="@id/salesHistoryFragment" />
     <fragment
         android:id="@+id/salesAndPaymentSummaryFragment"
-        android:name="com.example.stpos.SalesAndPaymentSummaryFragment"
+        android:name="com.example.stpos.Fragment.SalesAndPaymentSummaryFragment"
         android:label="fragment_sales_and_payment_summary"
         tools:layout="@layout/fragment_sales_and_payment_summary" />
     <action
@@ -39,7 +39,7 @@
         app:destination="@id/salesAndPaymentSummaryFragment" />
     <fragment
         android:id="@+id/categoryWiseFragment"
-        android:name="com.example.stpos.CategoryWiseFragment"
+        android:name="com.example.stpos.Fragment.CategoryWiseFragment"
         android:label="fragment_category_wise"
         tools:layout="@layout/fragment_category_wise" />
 </navigation>
