@@ -42,4 +42,44 @@
         android:name="com.example.stpos.Fragment.CategoryWiseFragment"
         android:label="fragment_category_wise"
         tools:layout="@layout/fragment_category_wise" />
+    <fragment
+        android:id="@+id/counterHistoryFragment"
+        android:name="com.example.stpos.Fragment.CounterHistoryFragment"
+        android:label="fragment_counter_history"
+        tools:layout="@layout/fragment_counter_history" />
+    <fragment
+        android:id="@+id/invoiceHistoryFragment"
+        android:name="com.example.stpos.Fragment.InvoiceHistoryFragment"
+        android:label="fragment_invoice_history"
+        tools:layout="@layout/fragment_invoice_history" />
+    <fragment
+        android:id="@+id/cancelInvoiceFragment"
+        android:name="com.example.stpos.Fragment.CancelInvoiceFragment"
+        android:label="fragment_cancel_invoice"
+        tools:layout="@layout/fragment_cancel_invoice" />
+    <fragment
+        android:id="@+id/orderPlaceFragment"
+        android:name="com.example.stpos.Fragment.OrderPlaceFragment"
+        android:label="fragment_order_place"
+        tools:layout="@layout/fragment_order_place" />
+    <fragment
+        android:id="@+id/completeOrderPlaceFragment"
+        android:name="com.example.stpos.Fragment.CompleteOrderPlaceFragment"
+        android:label="fragment_complete_order_place"
+        tools:layout="@layout/fragment_complete_order_place" />
+    <fragment
+        android:id="@+id/dueAndAdvancePaymentFragment"
+        android:name="com.example.stpos.Fragment.DueAndAdvancePaymentFragment"
+        android:label="fragment_due_and_advance_payment"
+        tools:layout="@layout/fragment_due_and_advance_payment" />
+    <fragment
+        android:id="@+id/purchaseFragment"
+        android:name="com.example.stpos.Fragment.PurchaseFragment"
+        android:label="fragment_purchase"
+        tools:layout="@layout/fragment_purchase" />
+    <fragment
+        android:id="@+id/purchaseHistoryFragment"
+        android:name="com.example.stpos.PurchaseHistoryFragment"
+        android:label="fragment_purchase_history"
+        tools:layout="@layout/fragment_purchase_history" />
 </navigation>
