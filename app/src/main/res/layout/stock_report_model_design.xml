@@ -10,12 +10,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="5dp"
-        app:cardElevation="2dp"
+        app:cardElevation="3dp"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="5dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -33,41 +34,37 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Barcode"
                         android:padding="5dp"
-                        android:text="Date"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
 
                 </LinearLayout>
 
-                <LinearLayout
+
+                <RelativeLayout
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="0.5">
+                    android:layout_weight="0.5"
+                    android:padding="5dp">
 
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
+                    <ImageView
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:hint="Date"
-                        android:padding="5dp"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_baseline_edit_24" />
 
-
-                </LinearLayout>
-
+                </RelativeLayout>
 
             </LinearLayout>
-
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:weightSum="1">
 
                 <LinearLayout
@@ -79,8 +76,9 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Product Name"
                         android:padding="5dp"
-                        android:text="Customer Name"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -93,15 +91,15 @@
                     android:layout_marginLeft="5dp"
                     android:layout_weight="0.5">
 
-                    <TextView
+                    <EditText
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Customer Name"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Stock"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
-
 
                 </LinearLayout>
 
@@ -111,8 +109,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:weightSum="1">
 
                 <LinearLayout
@@ -124,8 +121,9 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Expired Date"
                         android:padding="5dp"
-                        android:text="Customer Mobile"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -142,11 +140,11 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Customer Mobile"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Sales Rate"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
-
 
                 </LinearLayout>
 
@@ -156,8 +154,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:weightSum="1">
 
                 <LinearLayout
@@ -169,11 +166,11 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/bg_input_field"
+                        android:hint="Sales Value"
                         android:padding="5dp"
-                        android:text="Quantity"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
-
 
                 </LinearLayout>
 
@@ -187,11 +184,11 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Quantity"
+                        android:hint="Purchase Rate"
                         android:padding="5dp"
+                        android:background="@drawable/bg_input_field"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
-
 
                 </LinearLayout>
 
@@ -201,144 +198,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:weightSum="1">
+                android:layout_marginTop="5dp">
 
-                <LinearLayout
-                    android:layout_width="0dp"
+                <TextView
+                    style="@style/RobotoBold"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="Status"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Status"
-                        android:padding="5dp"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-
+                    android:padding="5dp"
+                    android:hint="Purchase Value"
+                    android:background="@drawable/bg_input_field"
+                    android:textColor="@color/textcolor"
+                    android:textSize="@dimen/sixteen" />
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:padding="5dp"
-                        android:text="Action"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="Action"
-                        android:padding="5dp"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal"
-                android:weightSum="1">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:padding="5dp"
-                        android:text="Total Quantity"
-                        android:textAlignment="center"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_weight="0.5">
-
-                    <TextView
-                        style="@style/RobotoBold"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:gravity="center_horizontal"
-                        android:hint="100"
-                        android:padding="5dp"
-                        android:textAlignment="center"
-                        android:textColor="@color/textcolor"
-                        android:textSize="@dimen/sixteen" />
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
 
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
+
 </LinearLayout>

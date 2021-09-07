@@ -80,7 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Customer Name"
+                        android:text="Expense Head"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -97,7 +97,7 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Customer Name"
+                        android:hint="Expense Head"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
@@ -125,7 +125,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Customer Mobile"
+                        android:text="Purpose"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -142,7 +142,7 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Customer Mobile"
+                        android:hint="Purpose"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
@@ -170,7 +170,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Quantity"
+                        android:text="Fund"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -187,7 +187,7 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Quantity"
+                        android:hint="Fund"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
@@ -215,7 +215,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:padding="5dp"
-                        android:text="Status"
+                        android:text="Amount"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
 
@@ -232,7 +232,7 @@
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="Status"
+                        android:hint="100 tk"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
@@ -306,7 +306,7 @@
                         android:layout_height="wrap_content"
                         android:gravity="center_horizontal"
                         android:padding="5dp"
-                        android:text="Total Quantity"
+                        android:text="Total "
                         android:textAlignment="center"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/sixteen" />
