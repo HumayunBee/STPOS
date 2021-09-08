@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7">
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:padding="5dp"
+                android:textColor="@color/textcolor" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/negative"/>
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:lines="1"
+                android:padding="5dp"
+                android:textColor="@color/textcolor" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/plus"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.3">
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Update Time"
+                android:padding="5dp"
+                android:textColor="@color/textcolor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Update By"
+                android:padding="5dp"
+                android:textColor="@color/textcolor" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

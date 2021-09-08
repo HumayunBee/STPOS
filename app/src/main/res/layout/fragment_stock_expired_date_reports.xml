@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.ManageProductFragment">
+    tools:context=".Fragment.StockExpiredDateReportsFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -29,18 +29,18 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/bg_input_field">
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:background="@drawable/bg_input_field">-->
 
-                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
-                    android:id="@+id/duct"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+            <!--                <com.toptoche.searchablespinnerlibrary.SearchableSpinner-->
+            <!--                    android:id="@+id/duct"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="50dp" />-->
 
-            </LinearLayout>
+            <!--            </LinearLayout>-->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -64,8 +64,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:itemCount="10"
-                    tools:listitem="@layout/manage_product_model_deisgn" />
+                    tools:itemCount="3"
+                    tools:listitem="@layout/stock_expired_date_report_model_deisgn" />
 
 
             </LinearLayout>
@@ -73,5 +73,6 @@
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
+
 
 </FrameLayout>

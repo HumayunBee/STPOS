@@ -94,82 +94,122 @@
         tools:layout="@layout/fragment_purcahse_return" />
     <fragment
         android:id="@+id/customerLedgerFragment"
-        android:name="com.example.stpos.CustomerLedgerFragment"
+        android:name="com.example.stpos.Fragment.CustomerLedgerFragment"
         android:label="fragment_customer_ledger"
         tools:layout="@layout/fragment_customer_ledger" />
     <fragment
         android:id="@+id/addNewSupplierFragment"
-        android:name="com.example.stpos.AddNewSupplierFragment"
+        android:name="com.example.stpos.Fragment.AddNewSupplierFragment"
         android:label="fragment_add_new_supplier"
         tools:layout="@layout/fragment_add_new_supplier" />
     <fragment
         android:id="@+id/makePaymentFragment"
-        android:name="com.example.stpos.MakePaymentFragment"
+        android:name="com.example.stpos.Fragment.MakePaymentFragment"
         android:label="fragment_make_payment"
         tools:layout="@layout/fragment_make_payment" />
     <fragment
         android:id="@+id/supplierHistoryFragment"
-        android:name="com.example.stpos.SupplierHistoryFragment"
+        android:name="com.example.stpos.Fragment.SupplierHistoryFragment"
         android:label="fragment_supplier_history"
         tools:layout="@layout/fragment_supplier_history" />
     <fragment
         android:id="@+id/manageSupplierListFragment"
-        android:name="com.example.stpos.ManageSupplierListFragment"
+        android:name="com.example.stpos.Fragment.ManageSupplierListFragment"
         android:label="fragment_manage_supplier_list"
         tools:layout="@layout/fragment_manage_supplier_list" />
     <fragment
         android:id="@+id/dueListSupplierFragment"
-        android:name="com.example.stpos.DueListSupplierFragment"
+        android:name="com.example.stpos.Fragment.DueListSupplierFragment"
         android:label="fragment_due_list_supplier"
         tools:layout="@layout/fragment_due_list_supplier" />
     <fragment
         android:id="@+id/manageProductFragment"
-        android:name="com.example.stpos.ManageProductFragment"
+        android:name="com.example.stpos.Fragment.ManageProductFragment"
         android:label="fragment_manage_product"
         tools:layout="@layout/fragment_manage_product" />
     <fragment
         android:id="@+id/manageCategoryFragment"
-        android:name="com.example.stpos.ManageCategoryFragment"
+        android:name="com.example.stpos.Fragment.ManageCategoryFragment"
         android:label="fragment_manage_category"
         tools:layout="@layout/fragment_manage_category" />
     <fragment
         android:id="@+id/manageSubCategoryFragment"
-        android:name="com.example.stpos.ManageSubCategoryFragment"
+        android:name="com.example.stpos.Fragment.ManageSubCategoryFragment"
         android:label="fragment_manage_sub_category"
         tools:layout="@layout/fragment_manage_sub_category" />
     <fragment
         android:id="@+id/manageBrandFragment"
-        android:name="com.example.stpos.ManageBrandFragment"
+        android:name="com.example.stpos.Fragment.ManageBrandFragment"
         android:label="fragment_manage_brand"
         tools:layout="@layout/fragment_manage_brand" />
     <fragment
         android:id="@+id/stockAdjusmentFragment"
-        android:name="com.example.stpos.StockAdjusmentFragment"
+        android:name="com.example.stpos.Fragment.StockAdjusmentFragment"
         android:label="fragment_stock_adjusment"
         tools:layout="@layout/fragment_stock_adjusment" />
     <fragment
         android:id="@+id/expensDebitFragment"
-        android:name="com.example.stpos.ExpensDebitFragment"
+        android:name="com.example.stpos.Fragment.ExpensDebitFragment"
         android:label="fragment_expens_debit"
         tools:layout="@layout/fragment_expens_debit" />
     <fragment
         android:id="@+id/expenseManageFragment"
-        android:name="com.example.stpos.ExpenseManageFragment"
+        android:name="com.example.stpos.Fragment.ExpenseManageFragment"
         android:label="fragment_expense_manage"
         tools:layout="@layout/fragment_expense_manage" />
     <fragment
         android:id="@+id/manageHistoryFragment"
-        android:name="com.example.stpos.ManageHistoryFragment"
+        android:name="com.example.stpos.Fragment.ManageHistoryFragment"
         android:label="fragment_manage_history"
         tools:layout="@layout/fragment_manage_history" />
     <fragment
         android:id="@+id/fundManageFragment"
-        android:name="com.example.stpos.FundManageFragment"
+        android:name="com.example.stpos.Fragment.FundManageFragment"
         android:label="fragment_fund_manage"
         tools:layout="@layout/fragment_fund_manage" />
     <fragment
         android:id="@+id/stockReportsFragment"
-        android:name="com.example.stpos.StockReportsFragment"
+        android:name="com.example.stpos.Fragment.StockReportsFragment"
         android:label="fragment_stock_reports"
         tools:layout="@layout/fragment_stock_reports" />
+    <fragment
+        android:id="@+id/stockExpiredDateReportsFragment"
+        android:name="com.example.stpos.Fragment.StockExpiredDateReportsFragment"
+        android:label="fragment_stock_expired_date_reports"
+        tools:layout="@layout/fragment_stock_expired_date_reports" />
+    <fragment
+        android:id="@+id/customerListFragment"
+        android:name="com.example.stpos.Fragment.CustomerListFragment"
+        android:label="fragment_customer_list"
+        tools:layout="@layout/fragment_customer_list" />
+    <fragment
+        android:id="@+id/customerDueListFragment"
+        android:name="com.example.stpos.Fragment.CustomerDueListFragment"
+        android:label="fragment_customer_due_list"
+        tools:layout="@layout/fragment_customer_due_list" />
+    <fragment
+        android:id="@+id/vatReportFragment"
+        android:name="com.example.stpos.Fragment.VatReportFragment"
+        android:label="fragment_vat_report"
+        tools:layout="@layout/fragment_vat_report" />
+    <fragment
+        android:id="@+id/reportFundHistoryFragment"
+        android:name="com.example.stpos.Fragment.ReportFundHistoryFragment"
+        android:label="fragment_report_fund_history"
+        tools:layout="@layout/fragment_report_fund_history" />
+    <fragment
+        android:id="@+id/productReportFragment"
+        android:name="com.example.stpos.Fragment.ProductReportFragment"
+        android:label="fragment_product_report"
+        tools:layout="@layout/fragment_product_report" />
+    <fragment
+        android:id="@+id/profitLossReportFragment"
+        android:name="com.example.stpos.Fragment.ProfitLossReportFragment"
+        android:label="fragment_profit_loss_report"
+        tools:layout="@layout/fragment_profit_loss_report" />
+    <fragment
+        android:id="@+id/discountSettingsFragment"
+        android:name="com.example.stpos.Fragment.DiscountSettingsFragment"
+        android:label="fragment_discount_settings"
+        tools:layout="@layout/fragment_discount_settings" />
 </navigation>

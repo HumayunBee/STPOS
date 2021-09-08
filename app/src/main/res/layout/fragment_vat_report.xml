@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragment.ManageHistoryFragment">
+    tools:context=".Fragment.VatReportFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -16,6 +16,15 @@
             android:orientation="vertical"
             android:padding="5dp">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -82,9 +91,61 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:itemCount="2"
-                    tools:listitem="@layout/manage_history_model_design" />
+                    tools:itemCount="1"
+                    tools:listitem="@layout/vat_report_model_design" />
 
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/RobotoBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text=" Total Vat"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/sixteen" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            style="@style/RobotoBold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="1000 tk"
+                            android:padding="5dp"
+                            android:textColor="@color/textcolor"
+                            android:textSize="@dimen/sixteen" />
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
