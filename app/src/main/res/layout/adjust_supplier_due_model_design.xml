@@ -19,7 +19,8 @@
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Customer Name"
+                android:hint="Supplier Name"
+                android:background="@drawable/bg_input_field"
                 android:padding="5dp"
                 android:textColor="@color/black" />
 
@@ -34,7 +35,8 @@
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Cell No"
+                android:hint="Company Name"
+                android:background="@drawable/bg_input_field"
                 android:padding="5dp"
                 android:textColor="@color/black" />
         </LinearLayout>
@@ -44,12 +46,13 @@
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
-            <TextView
+            <EditText
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Due Amount"
                 android:padding="5dp"
+                android:background="@drawable/bg_input_field"
                 android:textColor="@color/black" />
 
         </LinearLayout>

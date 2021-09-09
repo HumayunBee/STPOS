@@ -212,4 +212,34 @@
         android:name="com.example.stpos.Fragment.DiscountSettingsFragment"
         android:label="fragment_discount_settings"
         tools:layout="@layout/fragment_discount_settings" />
+    <fragment
+        android:id="@+id/manageUserFragment"
+        android:name="com.example.stpos.Fragment.ManageUserFragment"
+        android:label="fragment_manage_user"
+        tools:layout="@layout/fragment_manage_user" />
+    <fragment
+        android:id="@+id/manageCoverPicFragment"
+        android:name="com.example.stpos.Fragment.ManageCoverPicFragment"
+        android:label="fragment_manage_cover_pic"
+        tools:layout="@layout/fragment_manage_cover_pic" />
+    <fragment
+        android:id="@+id/assignCustomerDueFragment"
+        android:name="com.example.stpos.Fragment.AssignCustomerDueFragment"
+        android:label="fragment_assign_customer_due"
+        tools:layout="@layout/fragment_assign_customer_due" />
+    <fragment
+        android:id="@+id/assignStockValueFragment"
+        android:name="com.example.stpos.Fragment.AssignStockValueFragment"
+        android:label="fragment_assign_stock_value"
+        tools:layout="@layout/fragment_assign_stock_value" />
+    <fragment
+        android:id="@+id/adjustSupplierDueFragment"
+        android:name="com.example.stpos.Fragment.AdjustSupplierDueFragment"
+        android:label="fragment_adjust_supplier_due"
+        tools:layout="@layout/fragment_adjust_supplier_due" />
+    <fragment
+        android:id="@+id/notesSettingFragment"
+        android:name="com.example.stpos.Fragment.NotesSettingFragment"
+        android:label="fragment_notes_setting"
+        tools:layout="@layout/fragment_notes_setting" />
 </navigation>
