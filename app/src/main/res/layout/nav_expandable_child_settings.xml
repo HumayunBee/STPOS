@@ -23,16 +23,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toTopOf="parent">
 
 
             <TextView
+                android:id="@+id/discount_settings"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="2dp"
                 android:text="Discount Settings"
                 android:textColor="@color/textcolor"
@@ -54,16 +54,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_user_settings"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage User"
                 android:textColor="@color/textcolor"
@@ -83,16 +83,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_cover_pic"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage Cover Pic"
                 android:textColor="@color/textcolor"
@@ -112,16 +112,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/assign_customer_due"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Assign Customer Due"
                 android:textColor="@color/textcolor"
@@ -141,16 +141,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/assign_stock_value"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Assign Stock Value"
                 android:textColor="@color/textcolor"
@@ -170,16 +170,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/adjust_supplier_due"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Adjust Supplier Due"
                 android:textColor="@color/textcolor"
@@ -199,16 +199,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/note_settings"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Note"
                 android:textColor="@color/textcolor"

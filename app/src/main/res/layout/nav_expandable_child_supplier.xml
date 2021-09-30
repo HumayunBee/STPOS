@@ -21,17 +21,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/add_new_supplier"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Add"
                 android:textColor="@color/textcolor"
@@ -50,17 +50,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/make_payment"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+
                 android:padding="@dimen/two"
                 android:text="Make A Payment"
                 android:textColor="@color/textcolor"
@@ -79,17 +80,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/supplier_history"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="History"
                 android:textColor="@color/textcolor"
@@ -108,17 +109,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_supplier"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage"
                 android:textColor="@color/textcolor"
@@ -137,17 +138,17 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
             android:layout_marginTop="8dp"
-            android:gravity="center"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/supplier_due_list"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Due List"
                 android:textColor="@color/textcolor"

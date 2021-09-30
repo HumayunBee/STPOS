@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.InvoiceHistoryFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -22,7 +23,8 @@
 
                 <Spinner
                     android:layout_width="match_parent"
-                    android:layout_height="50dp" />
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_input_field"/>
 
             </LinearLayout>
 
@@ -38,6 +40,7 @@
                     android:layout_weight="0.5">
 
                     <TextView
+                        android:id="@+id/start_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_input_field"
@@ -55,6 +58,7 @@
                     android:layout_weight="0.5">
 
                     <TextView
+                        android:id="@+id/end_date"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_input_field"

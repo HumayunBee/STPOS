@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.AddExHeadFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textAlignment="center"
+                android:text="Add New Expense Head"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/sixteen"
+                android:textStyle="bold"
+                android:gravity="center_horizontal" />
+
+            <EditText
+                android:id="@+id/exhead_add"
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_input_field"
+                android:padding="15dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/sixteen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submit_customer"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                style="@style/RobotoBold"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

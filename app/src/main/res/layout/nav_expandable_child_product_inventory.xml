@@ -22,17 +22,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_product"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
+                android:layout_marginLeft="30dp"
                 android:text="Manage Products"
                 android:textColor="@color/textcolor"
                 android:textSize="@dimen/sixteen" />
@@ -51,16 +52,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_category"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage Category"
                 android:textColor="@color/textcolor"
@@ -80,16 +81,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_sub_category"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage Sub Category"
                 android:textColor="@color/textcolor"
@@ -109,16 +110,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/manage_brand"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Manage Brand"
                 android:textColor="@color/textcolor"
@@ -138,16 +139,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/stock_adjusment"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Stock Adjustment"
                 android:textColor="@color/textcolor"

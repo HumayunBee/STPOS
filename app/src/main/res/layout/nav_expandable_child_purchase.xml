@@ -22,16 +22,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/puchase_child"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+
                 android:padding="@dimen/two"
                 android:text="Purchase"
                 android:textColor="@color/textcolor"
@@ -51,16 +52,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/transfer"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+
                 android:padding="@dimen/two"
                 android:text="Transfer"
                 android:textColor="@color/textcolor"
@@ -80,16 +82,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/purchase_history"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="History"
                 android:textColor="@color/textcolor"
@@ -109,7 +111,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
@@ -118,7 +120,7 @@
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
+
                 android:padding="@dimen/two"
                 android:text="Purchase And Payment History"
                 android:textColor="@color/textcolor"
@@ -138,16 +140,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/purchase_return"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Purchase Return"
                 android:textColor="@color/textcolor"

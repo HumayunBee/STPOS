@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent">
 
     <LinearLayout
@@ -34,7 +35,6 @@
                 android:layout_height="100dp"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_input_field"
-                android:hint="Company Name"
                 android:gravity="start"
                 android:padding="5dp"
                 android:textColor="@color/textcolor"

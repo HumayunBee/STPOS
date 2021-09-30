@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Fragment.UpdateSupplierFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Name"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/fourteen"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/supp_name"
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_input_field"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/sixteen" />
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:text="Company Name"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/fourteen"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/supp_com_name"
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/bg_input_field"
+                android:padding="5dp"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/sixteen" />
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Cell No"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/fourteen"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/supp_cell_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RobotoBold"
+                android:layout_marginTop="5dp"
+                android:inputType="number"
+                android:textSize="@dimen/sixteen"
+                android:textColor="@color/textcolor"
+                android:background="@drawable/bg_input_field"
+                android:padding="5dp"/>
+
+
+            <TextView
+                style="@style/RobotoBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="Address"
+                android:textColor="@color/textcolor"
+                android:textSize="@dimen/fourteen"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/supp_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/RobotoBold"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/sixteen"
+                android:textColor="@color/textcolor"
+                android:background="@drawable/bg_input_field"
+                android:padding="5dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                style="@style/RobotoBold"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_button"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

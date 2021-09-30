@@ -22,16 +22,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/five"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/order_place"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Order Place"
                 android:textColor="@color/textcolor"
@@ -51,16 +51,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:gravity="center"
+            android:layout_marginLeft="30dp"
             android:orientation="horizontal"
             app:layout_constraintTop_toBottomOf="@+id/play">
 
 
             <TextView
+                android:id="@+id/complete_order_place"
                 style="@style/RobotoBold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_vertical"
                 android:padding="@dimen/two"
                 android:text="Complete Order Place"
                 android:textColor="@color/textcolor"

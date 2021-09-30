@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.SalesAndPaymentSummaryFragment">
 
     <androidx.core.widget.NestedScrollView
@@ -22,11 +23,12 @@
                 android:padding="5dp">
 
                 <TextView
+                    android:id="@+id/start_date"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_input_field"
                     android:padding="5dp"
-                    android:text="Date"
+                    android:hint="Date"
                     android:textColor="@color/textcolor"
                     android:textSize="@dimen/sixteen" />
 

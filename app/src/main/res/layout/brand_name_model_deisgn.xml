@@ -15,11 +15,12 @@
             android:layout_weight="1.5">
 
             <TextView
+                android:id="@+id/b_name"
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="5dp"
-                android:hint="Company Name"
+                android:hint="Brand Name"
                 android:textColor="@color/black" />
         </LinearLayout>
 
@@ -31,11 +32,13 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/edit"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <ImageView
+                android:id="@+id/delete"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"

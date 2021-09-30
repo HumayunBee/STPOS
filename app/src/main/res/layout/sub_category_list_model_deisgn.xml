@@ -15,6 +15,7 @@
             android:layout_weight="1.5">
 
             <TextView
+                android:id="@+id/sub_name"
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -28,6 +29,7 @@
             android:layout_weight="1">
 
             <TextView
+                android:id="@+id/c_name"
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -44,11 +46,13 @@
             android:orientation="horizontal">
 
             <ImageView
+                android:id="@+id/edit_sub"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_baseline_edit_24" />
 
             <ImageView
+                android:id="@+id/delete_subcategory"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"

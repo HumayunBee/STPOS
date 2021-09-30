@@ -19,7 +19,7 @@
             android:src="@drawable/database" />
 
         <TextView
-            android:id="@+id/tv_nav_pickup_parcel_list"
+            android:id="@+id/customer_ledger"
             style="@style/RobotoBold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -29,11 +29,11 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/customer_name"
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_input_field"
-                        android:hint="Customer Name"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/fourteen" />
@@ -46,12 +46,12 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/membership_no"
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:background="@drawable/bg_input_field"
-                        android:hint="Membership No"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/fourteen" />
@@ -73,11 +73,11 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/cell_no"
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/bg_input_field"
-                        android:hint="Cell No"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/fourteen" />
@@ -90,12 +90,12 @@
                     android:layout_weight="1">
 
                     <TextView
+                        android:id="@+id/customer_address"
                         style="@style/RobotoBold"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="5dp"
                         android:background="@drawable/bg_input_field"
-                        android:hint="Address"
                         android:padding="5dp"
                         android:textColor="@color/textcolor"
                         android:textSize="@dimen/fourteen" />
@@ -112,11 +112,11 @@
 
 
                 <TextView
+                    android:id="@+id/customer_point"
                     style="@style/RobotoBold"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/bg_input_field"
-                    android:hint="Point"
                     android:padding="5dp"
                     android:textColor="@color/textcolor"
                     android:textSize="@dimen/fourteen" />

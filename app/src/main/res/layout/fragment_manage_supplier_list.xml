@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Fragment.ManageSupplierListFragment">
 
     <LinearLayout
@@ -12,6 +13,7 @@
         android:padding="5dp">
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/supplierlist"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/manage_supplier_model_design"

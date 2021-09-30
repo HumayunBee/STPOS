@@ -1,66 +1,153 @@
 package com.example.stpos.Fragment;
 
+import android.app.DatePickerDialog;
+import android.app.ProgressDialog;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.DatePicker;
+import android.widget.TextView;
 
+import com.example.stpos.Adaptar.CustomerLedgerSpinner.CustomerLedgerSpinnerAdaptar;
+import com.example.stpos.DataModel.Customer.Customer;
+import com.example.stpos.DataModel.Customer.Customer_Model_Container;
+import com.example.stpos.Network.Api;
+import com.example.stpos.Network.RetrofitClient;
 import com.example.stpos.R;
+import com.example.stpos.databinding.FragmentCustomerLedgerBinding;
+import com.example.stpos.databinding.FragmentCustomerListBinding;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CustomerLedgerFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import org.jetbrains.annotations.NotNull;
+
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class CustomerLedgerFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+    public FragmentCustomerLedgerBinding binding;
+    Api api;
+    ProgressDialog progressDialog;
+    Calendar myCalendar;
+    DatePickerDialog datePickerDialog;
+    private int mYear, mMonth, mDay;
+   // List<Customer> customername = new ArrayList<>();
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     public CustomerLedgerFragment() {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CustomerLedgerFragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static CustomerLedgerFragment newInstance(String param1, String param2) {
         CustomerLedgerFragment fragment = new CustomerLedgerFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
         return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_customer_ledger, container, false);
+        //return inflater.inflate(R.layout.fragment_customer_ledger, container, false);
+        binding = FragmentCustomerLedgerBinding.inflate(inflater, container, false);
+        return binding.getRoot();
+    }
+
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        api = RetrofitClient.get(getContext()).create(Api.class);
+        progressDialog = new ProgressDialog(getContext());
+        progressDialog.setMessage("Please wait....");
+        progressDialog.setCancelable(false);
+        progressDialog.show();
+        binding.startDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myCalendar = Calendar.getInstance();
+                mYear = myCalendar.get(Calendar.YEAR);
+                mMonth = myCalendar.get(Calendar.MONTH);
+                mDay = myCalendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(getContext(),
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+                                int month = i1 + 1;
+                                binding.startDate.setText(i + "-" + month + "-" + i2);
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+            }
+        });
+
+        binding.endDate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                myCalendar = Calendar.getInstance();
+                mYear = myCalendar.get(Calendar.YEAR);
+                mMonth = myCalendar.get(Calendar.MONTH);
+                mDay = myCalendar.get(Calendar.DAY_OF_MONTH);
+                datePickerDialog = new DatePickerDialog(getContext(),
+                        new DatePickerDialog.OnDateSetListener() {
+                            @Override
+                            public void onDateSet(DatePicker datePicker, int i, int i1, int i2) {
+                                int month = i1 + 1;
+                                binding.endDate.setText(i + "-" + month + "-" + i2);
+
+                            }
+                        }, mYear, mMonth, mDay);
+                datePickerDialog.show();
+            }
+        });
+
+        api.getcustomer().enqueue(new Callback<Customer_Model_Container>() {
+            @Override
+            public void onResponse(Call<Customer_Model_Container> call, Response<Customer_Model_Container> response) {
+                progressDialog.dismiss();
+                if (response.isSuccessful()&& response.body()!=null){
+                    //customername.add(new Customer("","Select A Customer"));
+
+                    CustomerLedgerSpinnerAdaptar adaptar=new CustomerLedgerSpinnerAdaptar(response.body().getCustomers(),
+                            getLayoutInflater());
+                    binding.customerNameSpinner.setAdapter(adaptar);
+                    Log.d("spinner",response.body().getCustomers().toString());
+                }
+//                else {
+//                    try {
+//                        Log.e("spinner",response.errorBody().string());
+//                    } catch (IOException e) {
+//                        e.printStackTrace();
+//                    }
+//
+//                }
+            }
+
+            @Override
+            public void onFailure(Call<Customer_Model_Container> call, Throwable t) {
+
+            }
+        });
+
     }
 }

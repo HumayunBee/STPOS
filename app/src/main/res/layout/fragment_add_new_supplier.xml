@@ -2,6 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     tools:context=".Fragment.AddNewSupplierFragment">
 
@@ -27,12 +28,12 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/add_supp_name"
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_input_field"
-                android:hint="STITIBD"
                 android:padding="5dp"
                 android:textColor="@color/textcolor"
                 android:textSize="@dimen/sixteen" />
@@ -49,12 +50,12 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/add_supp_compnay_name"
                 style="@style/RobotoBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:background="@drawable/bg_input_field"
-                android:hint="Company Name"
                 android:padding="5dp"
                 android:textColor="@color/textcolor"
                 android:textSize="@dimen/sixteen" />
@@ -71,10 +72,10 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/add_supp_cell_no"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/RobotoBold"
-                android:hint="123456789"
                 android:layout_marginTop="5dp"
                 android:inputType="number"
                 android:textSize="@dimen/sixteen"
@@ -95,10 +96,10 @@
                 android:textStyle="bold" />
 
             <EditText
+                android:id="@+id/add_supp_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/RobotoBold"
-                android:hint="Dhanmondi dhaka"
                 android:layout_marginTop="5dp"
                 android:textSize="@dimen/sixteen"
                 android:textColor="@color/textcolor"
@@ -115,6 +116,7 @@
             android:gravity="center">
 
             <Button
+                android:id="@+id/addsupplier"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:text="Submit"

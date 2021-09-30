@@ -147,11 +147,13 @@
         android:name="com.example.stpos.Fragment.StockAdjusmentFragment"
         android:label="fragment_stock_adjusment"
         tools:layout="@layout/fragment_stock_adjusment" />
+
     <fragment
         android:id="@+id/expensDebitFragment"
         android:name="com.example.stpos.Fragment.ExpensDebitFragment"
         android:label="fragment_expens_debit"
         tools:layout="@layout/fragment_expens_debit" />
+
     <fragment
         android:id="@+id/expenseManageFragment"
         android:name="com.example.stpos.Fragment.ExpenseManageFragment"
@@ -167,6 +169,7 @@
         android:name="com.example.stpos.Fragment.FundManageFragment"
         android:label="fragment_fund_manage"
         tools:layout="@layout/fragment_fund_manage" />
+
     <fragment
         android:id="@+id/stockReportsFragment"
         android:name="com.example.stpos.Fragment.StockReportsFragment"
@@ -242,4 +245,128 @@
         android:name="com.example.stpos.Fragment.NotesSettingFragment"
         android:label="fragment_notes_setting"
         tools:layout="@layout/fragment_notes_setting" />
+    <action android:id="@+id/action_global_categoryWiseFragment" app:destination="@id/categoryWiseFragment"/>
+    <action android:id="@+id/action_global_counterHistoryFragment" app:destination="@id/counterHistoryFragment"/>
+    <action android:id="@+id/action_global_invoiceHistoryFragment" app:destination="@id/invoiceHistoryFragment"/>
+    <action android:id="@+id/action_global_cancelInvoiceFragment" app:destination="@id/cancelInvoiceFragment"/>
+    <action android:id="@+id/action_global_orderPlaceFragment" app:destination="@id/orderPlaceFragment"/>
+    <action android:id="@+id/action_global_completeOrderPlaceFragment" app:destination="@id/completeOrderPlaceFragment"/>
+    <action android:id="@+id/action_global_dueAndAdvancePaymentFragment" app:destination="@id/dueAndAdvancePaymentFragment"/>
+    <action android:id="@+id/action_global_purchaseFragment" app:destination="@id/purchaseFragment"/>
+    <action android:id="@+id/action_global_transfarFragment" app:destination="@id/transfarFragment"/>
+    <action android:id="@+id/action_global_purchaseHistoryFragment" app:destination="@id/purchaseHistoryFragment"/>
+    <action android:id="@+id/action_global_purcahseReturnFragment" app:destination="@id/purcahseReturnFragment"/>
+    <action android:id="@+id/action_global_customerLedgerFragment" app:destination="@id/customerLedgerFragment"/>
+    <action android:id="@+id/action_global_addNewSupplierFragment" app:destination="@id/addNewSupplierFragment"/>
+    <action android:id="@+id/action_global_makePaymentFragment" app:destination="@id/makePaymentFragment"/>
+    <action android:id="@+id/action_global_supplierHistoryFragment" app:destination="@id/supplierHistoryFragment"/>
+    <action android:id="@+id/action_global_manageSupplierListFragment" app:destination="@id/manageSupplierListFragment"/>
+    <action android:id="@+id/action_global_dueListSupplierFragment" app:destination="@id/dueListSupplierFragment"/>
+    <action android:id="@+id/action_global_manageProductFragment" app:destination="@id/manageProductFragment"/>
+    <action android:id="@+id/action_global_manageCategoryFragment" app:destination="@id/manageCategoryFragment"/>
+    <action android:id="@+id/action_global_manageSubCategoryFragment" app:destination="@id/manageSubCategoryFragment"/>
+    <action android:id="@+id/action_global_manageBrandFragment" app:destination="@id/manageBrandFragment"/>
+    <action android:id="@+id/action_global_stockAdjusmentFragment" app:destination="@id/stockAdjusmentFragment"/>
+    <action android:id="@+id/action_global_expensDebitFragment" app:destination="@id/expensDebitFragment"/>
+    <action android:id="@+id/action_global_expenseManageFragment" app:destination="@id/expenseManageFragment"/>
+    <action android:id="@+id/action_global_manageHistoryFragment" app:destination="@id/manageHistoryFragment"/>
+    <action android:id="@+id/action_global_fundManageFragment" app:destination="@id/fundManageFragment"/>
+    <action android:id="@+id/action_global_stockReportsFragment" app:destination="@id/stockReportsFragment"/>
+    <action android:id="@+id/action_global_stockExpiredDateReportsFragment" app:destination="@id/stockExpiredDateReportsFragment"/>
+    <action android:id="@+id/action_global_customerListFragment" app:destination="@id/customerListFragment"/>
+    <action android:id="@+id/action_global_customerDueListFragment" app:destination="@id/customerDueListFragment"/>
+    <action android:id="@+id/action_global_vatReportFragment" app:destination="@id/vatReportFragment"/>
+    <action android:id="@+id/action_global_reportFundHistoryFragment" app:destination="@id/reportFundHistoryFragment"/>
+    <action android:id="@+id/action_global_productReportFragment" app:destination="@id/productReportFragment"/>
+    <action android:id="@+id/action_global_profitLossReportFragment" app:destination="@id/profitLossReportFragment"/>
+    <action android:id="@+id/action_global_discountSettingsFragment" app:destination="@id/discountSettingsFragment"/>
+    <action android:id="@+id/action_global_manageUserFragment" app:destination="@id/manageUserFragment"/>
+    <action android:id="@+id/action_global_manageCoverPicFragment" app:destination="@id/manageCoverPicFragment"/>
+    <action android:id="@+id/action_global_assignCustomerDueFragment" app:destination="@id/assignCustomerDueFragment"/>
+    <action android:id="@+id/action_global_assignStockValueFragment" app:destination="@id/assignStockValueFragment"/>
+    <action android:id="@+id/action_global_adjustSupplierDueFragment" app:destination="@id/adjustSupplierDueFragment"/>
+    <action android:id="@+id/action_global_notesSettingFragment" app:destination="@id/notesSettingFragment"/>
+    <fragment
+        android:id="@+id/addNewCustomerFragment"
+        android:name="com.example.stpos.Fragment.AddNewCustomerFragment"
+        android:label="fragment_add_new_customer"
+        tools:layout="@layout/fragment_add_new_customer" />
+    <action android:id="@+id/action_global_addNewCustomerFragment" app:destination="@id/addNewCustomerFragment"/>
+    <fragment
+        android:id="@+id/addnewCategoryFragment"
+        android:name="com.example.stpos.Fragment.AddnewCategoryFragment"
+        android:label="fragment_addnew_category"
+        tools:layout="@layout/fragment_addnew_category" />
+    <action android:id="@+id/action_global_addnewCategoryFragment" app:destination="@id/addnewCategoryFragment" />
+    <fragment
+        android:id="@+id/updateCategoryFragment"
+        android:name="com.example.stpos.Fragment.UpdateCategoryFragment"
+        android:label="fragment_update_category"
+        tools:layout="@layout/fragment_update_category" />
+    <action android:id="@+id/action_global_updateCategoryFragment" app:destination="@id/updateCategoryFragment" />
+    <fragment
+        android:id="@+id/addNewSubCategoryFragment"
+        android:name="com.example.stpos.Fragment.AddNewSubCategoryFragment"
+        android:label="fragment_add_new_sub_category"
+        tools:layout="@layout/fragment_add_new_sub_category" />
+    <action android:id="@+id/action_global_addNewSubCategoryFragment" app:destination="@id/addNewSubCategoryFragment" />
+    <fragment
+        android:id="@+id/addBrandFragment"
+        android:name="com.example.stpos.Fragment.AddBrandFragment"
+        android:label="fragment_add_brand"
+        tools:layout="@layout/fragment_add_brand" />
+    <action android:id="@+id/action_global_addBrandFragment" app:destination="@id/addBrandFragment" />
+    <fragment
+        android:id="@+id/updateBrandFragment"
+        android:name="com.example.stpos.Fragment.UpdateBrandFragment"
+        android:label="fragment_update_brand"
+        tools:layout="@layout/fragment_update_brand" />
+    <action android:id="@+id/action_global_updateBrandFragment" app:destination="@id/updateBrandFragment"/>
+    <fragment
+        android:id="@+id/addFundFragment"
+        android:name="com.example.stpos.Fragment.AddFundFragment"
+        android:label="fragment_add_fund"
+        tools:layout="@layout/fragment_add_fund" />
+    <action android:id="@+id/action_global_addFundFragment" app:destination="@id/addFundFragment" />
+    <fragment
+        android:id="@+id/updateFundFragment"
+        android:name="com.example.stpos.Fragment.UpdateFundFragment"
+        android:label="fragment_update_fund"
+        tools:layout="@layout/fragment_update_fund" />
+    <action android:id="@+id/action_global_updateFundFragment" app:destination="@id/updateFundFragment"/>
+    <fragment
+        android:id="@+id/addExHeadFragment"
+        android:name="com.example.stpos.Fragment.AddExHeadFragment"
+        android:label="fragment_add_ex_head"
+        tools:layout="@layout/fragment_add_ex_head" />
+    <action android:id="@+id/action_global_addExHeadFragment" app:destination="@id/addExHeadFragment" />
+    <fragment
+        android:id="@+id/updateExpenseHeadFragment"
+        android:name="com.example.stpos.Fragment.UpdateExpenseHeadFragment"
+        android:label="fragment_update_expense_head"
+        tools:layout="@layout/fragment_update_expense_head" />
+    <action android:id="@+id/action_global_updateExpenseHeadFragment" app:destination="@id/updateExpenseHeadFragment" />
+    <fragment
+        android:id="@+id/updateSupplierFragment"
+        android:name="com.example.stpos.Fragment.UpdateSupplierFragment"
+        android:label="fragment_update_supplier"
+        tools:layout="@layout/fragment_update_supplier" />
+    <action android:id="@+id/action_global_updateSupplierFragment" app:destination="@id/updateSupplierFragment"/>
+    <fragment
+        android:id="@+id/salesReturnFragment"
+        android:name="com.example.stpos.Fragment.SalesReturnFragment"
+        android:label="fragment_sales_return"
+        tools:layout="@layout/fragment_sales_return" />
+    <action android:id="@+id/action_global_salesReturnFragment" app:destination="@id/salesReturnFragment"/>
+    <fragment
+        android:id="@+id/updateSubCategoryFragment"
+        android:name="com.example.stpos.Fragment.UpdateSubCategoryFragment"
+        android:label="fragment_update_sub_category"
+        tools:layout="@layout/fragment_update_sub_category" />
+    <action android:id="@+id/action_global_updateSubCategoryFragment" app:destination="@id/updateSubCategoryFragment" />
+    <fragment
+        android:id="@+id/addProductFragment"
+        android:name="com.example.stpos.Fragment.AddProductFragment"
+        android:label="fragment_add_product"
+        tools:layout="@layout/fragment_add_product" />
 </navigation>
