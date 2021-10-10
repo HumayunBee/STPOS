@@ -35,7 +35,7 @@ public class SupplierSpinnerAdaptar extends BaseAdapter {
     @Override
     public long getItemId(int position) {
 
-        Long suppli=Long.parseLong(supplierpro.get(position).getName());
+        Long suppli=Long.parseLong(supplierpro.get(position).getUserId());
         return suppli;
     }
 

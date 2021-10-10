@@ -34,7 +34,7 @@ public class BrandSpinnerAdaptar extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        Long brands = Long.parseLong(brandpro.get(position).getBrandName());
+        Long brands = Long.parseLong(brandpro.get(position).getBrandId());
         return brands;
     }
 

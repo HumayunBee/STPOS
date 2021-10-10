@@ -35,7 +35,7 @@ public class CategorySpinnerAdaptar extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        Long cat=Long.parseLong(categoryspin.get(position).getCategoryName());
+        Long cat=Long.parseLong(categoryspin.get(position).getCategoryId());
         return cat;
     }
 

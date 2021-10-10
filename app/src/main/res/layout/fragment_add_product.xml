@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -256,7 +255,7 @@
                         android:textStyle="bold" />
 
                     <TextView
-                        android:id="@+id/nid_side_one"
+                        android:id="@+id/main_one"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -266,6 +265,7 @@
                         android:textColorHint="#000" />
 
                     <LinearLayout
+                        android:id="@+id/main_gone_pic"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -276,7 +276,7 @@
 
 
                         <ImageView
-                            android:id="@+id/nidone_license_pic"
+                            android:id="@+id/pro_main_pic"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:src="@drawable/hamburger" />
@@ -295,6 +295,7 @@
                         android:textStyle="bold" />
 
                     <TextView
+                        android:id="@+id/details_upload"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="5dp"
@@ -304,6 +305,7 @@
                         android:textColorHint="#000" />
 
                     <LinearLayout
+                        android:id="@+id/gone_details_image"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
@@ -314,12 +316,59 @@
 
 
                         <ImageView
-
+                            android:id="@+id/details_image"
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:src="@drawable/hamburger" />
 
                     </LinearLayout>
+
+                    <TextView
+                        style="@style/RobotoBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:text="Product Details"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/fourteen"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/pro_details"
+                        style="@style/RobotoBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_input_field"
+                        android:padding="5dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/sixteen" />
+
+                    <TextView
+                        style="@style/RobotoBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:padding="5dp"
+                        android:text="Product Type"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/fourteen"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/pro_type"
+                        style="@style/RobotoBold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_input_field"
+                        android:padding="5dp"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/sixteen" />
+
+
+
 
                 </LinearLayout>
 

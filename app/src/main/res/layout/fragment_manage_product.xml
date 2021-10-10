@@ -69,7 +69,7 @@
                     android:id="@+id/product_list"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    tools:itemCount="10"
+                    tools:itemCount="1"
                     tools:listitem="@layout/manage_product_model_deisgn" />
 
             </LinearLayout>
@@ -79,6 +79,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <Button
+        android:id="@+id/add_new_product"
         style="@style/RobotoBold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

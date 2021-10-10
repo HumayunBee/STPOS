@@ -34,7 +34,7 @@ public class SubcategorySpinnerAdaptar extends BaseAdapter {
 
     @Override
     public long getItemId(int position) {
-        Long subc = Long.parseLong(subsp.get(position).getSubCategoryName());
+        Long subc = Long.parseLong(subsp.get(position).getSubCategoryId());
         return subc;
     }
 
