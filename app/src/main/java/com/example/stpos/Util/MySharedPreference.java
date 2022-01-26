@@ -14,7 +14,8 @@ public class MySharedPreference {
     public static synchronized SharedPreferences getInstance(Context context){
 
         if (sharedPreferences==null){
-            return sharedPreferences=context.getSharedPreferences(com.example.stpos.Util.Constant.MY_TOKEN_ID, Context.MODE_PRIVATE);
+            return sharedPreferences=context.getSharedPreferences(com.example.stpos.
+                    Util.Constant.MY_TOKEN_ID, Context.MODE_PRIVATE);
         }
         return sharedPreferences;
     }

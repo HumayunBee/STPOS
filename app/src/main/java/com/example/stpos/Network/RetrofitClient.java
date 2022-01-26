@@ -27,7 +27,8 @@ public class RetrofitClient {
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();
-        if (retrofit == null) {OkHttpClient.Builder httpClient = new OkHttpClient.Builder().addInterceptor(new QueryParameterInterceptor(context));
+        if (retrofit == null) {OkHttpClient.Builder httpClient = new OkHttpClient.Builder().
+                addInterceptor(new QueryParameterInterceptor(context));
 
             OkHttpClient client = httpClient.build();
 
